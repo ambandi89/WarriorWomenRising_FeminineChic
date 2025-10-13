@@ -168,7 +168,7 @@ h1 {
 h2 {
     font-family: 'Louise-Regular';
     font-size: 7.5vw;
-    display: flex;
+    display: block;
     position: relative;
     top: 20px;
     color: #d4b483;
@@ -279,7 +279,8 @@ main {
     /* background: linear-gradient(rgba(0,0,0, 1), rgba(0,0,0, .35)), url(img/texture-1306790.jpg)bottom center / cover; */
 }
 .main-container {
-    background: rgba(241, 209, 181, 0.75);
+    background: rgba(241, 209, 181, 0.80);
+    border: 40px solid #254441;
     position: relative;
     padding: 25px;
 }

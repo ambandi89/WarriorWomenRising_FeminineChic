@@ -545,7 +545,7 @@ a:hover::before {
     outline-offset: 15px;
     border: none;
     background-color: #254441;
-    mix-blend-mode: overlay;
+    mix-blend-mode: screen;
 }
 .social-icon,
 .menu-socials {

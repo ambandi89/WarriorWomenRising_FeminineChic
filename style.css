@@ -94,13 +94,12 @@ header {
     height: 110vh;
 }
 header img {
-    width: 70px;
-    height: 65px;
+    width: 80px;
+    height: 75px;
     margin: 15px;
     position: relative;
     bottom: 3px;
     z-index: 0;
-    border: 1px solid white;
 }
 header a {
     display: flex;

@@ -9,9 +9,9 @@ html {
 	text-size-adjust: 100%;
 }
 body {
-    background: linear-gradient(rgba(241, 209, 181, .95), rgba(241, 209, 181, .95)), url(img/background-6823952_1280.jpg) center / contain;
+    background: linear-gradient(rgba(241, 209, 181, .90), rgba(241, 209, 181, .90)), url(img/flowers-7881557_1280.jpg) center / contain;
 	margin: auto;
-	font-family: "Volkhov", serif;
+	font-family: "Lato", serif;
 	line-height: 1.75;
 	width: 100%;
 	padding:
@@ -142,22 +142,23 @@ a:focus {
 h1 {
     font-family: "Cinzel", serif;
     font-size: 5.5vw;
-    display: block;
     position: relative;
-    top: 0px;
-    right: -60px;
+    top: -40px;
+    right: -38px;
     color: black;
     justify-content: center;
+    padding: 20px;
+    text-align: center;
 }
 h2 {
-    font-family: 'Louise-Regular';
+    font-family: "Cinzel", serif;
     font-size: 7.5vw;
-    display: block;
+    display: inline;
     position: relative;
     top: 20px;
-    color: #d4b483;
+    color: black;
     justify-content: center;
-    right: 100px;
+    right: 110px;
 }
 h2 ul {
     display: flex;
@@ -209,7 +210,7 @@ ul li:nth-child(6) {
     animation-delay: 2.5s;
 } */
 header p {
-    font-family: "poppins", sans-serif;
+    font-family: "Lato", sans-serif;
     font-size: 3.5vw;
     font-weight: 500;
     display: flex;
@@ -253,7 +254,7 @@ header button a {
     margin: auto;
     position: relative;
     bottom: 35px;
-    left: 40px;
+    left: 60px;
     outline: 3px solid white;
     outline-offset: 15px;
     border: none;
@@ -269,80 +270,48 @@ header button a {
     top: 60px;
 }
 
-.typewriter {
-    text-align: center;
-}
-
-span {
-    font-family: "Poppins", sans-serif;
+#container-anim {
+    text-align:center;
     font-size: 2vh;
-    font-weight: 500;
+    font-family: 'lato';
+    width: auto;
+    display:block;
+}
+#container-anim span {
+  font-size: 2vh;
+  font-family: 'lato';
+}
+#flip {
+    height:50px;
+    overflow:hidden;
+    font-weight: 600;
+}
+#flip > div > div {
+    color: black;
+    padding:4px 12px;
+    height:50px;
+    margin-bottom:45px;
+    display:inline-block;
+}
+#flip div:first-child {
+    animation: show 15s linear infinite;
 }
 
-.text_1 {
-  animation: text1;
-}
-
-.text_2 {
-  animation: text2;
-}
-
-.text_3 {
-  animation: text3;
-}
-
-.text_1, .text_2, .text_3 {
-  overflow: hidden;
-  white-space: nowrap;
-  display: inline-block;
-  position: relative;
-  animation-duration: 25s;
-  animation-timing-function: ease-in(25, end);
-  animation-iteration-count: infinite;
-}
-
-.text_1::after, .text_2::after, .text_3::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  animation: caret infinite;
-  animation-duration: 1s;
-  animation-timing-function: ease-in(1, end);
-}
-
-@keyframes text1 {
-  0%, 33%, 66%, 100% {
-    width: 0;
-  }
-  15% {
-    width: 85%;
-  }
-}
-
-@keyframes text2 {
-  0%, 33%, 66%, 100%{
-    width: 0;
-  }
-  
-  50% {
-    width: 85%;
-  }
-}
-
-@keyframes text3 {
-  0%, 33%, 66%, 100% {
-    width: 0;
-  }
-  
-  82% {
-    width: 85%;
-  }
+@keyframes show {
+    0% {margin-top:-270px;}
+    5% {margin-top:-180px;}
+    33% {margin-top:-180px;}
+    38% {margin-top:-90px;}
+    66% {margin-top:-90px;}
+    71% {margin-top:0px;}
+    99.99% {margin-top:0px;}
+    100% {margin-top:270px;}
 }
 
 .mission-container {
     border: 40px solid #254441;
     position: relative;
-    padding: 25px;
+    padding: 5px;
     display: grid;
     place-items: center;
 }
@@ -365,11 +334,11 @@ main section h3 {
     place-items: center;
 }
 section p {
-    font-family: 'poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 4vw;
     font-weight: 500;
     color: black;
-    opacity: 100%;
+    margin-top: 50px;
 }
 #kafi {
     border-radius: 50%;
@@ -384,19 +353,16 @@ section p {
     justify-content: center;
     align-items: center;
     margin: 30px;
+    margin-top: 50px;
     gap: 50px;
 }
 p {
     margin: auto;
     text-align: center;
 }
-/* #monstera {
-    height: 10vh;
-    width: auto;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-} */
+.episodes {
+  margin-top: 50px;
+}
 .header-btn {
     display: flex;
     position: relative;
@@ -493,6 +459,39 @@ a:hover::before {
     place-items: center;
     padding: 60px;
 }
+.subscribe-home {
+  height: 40vh;
+  width: auto;
+}
+
+.subscribe-home form {
+   background: white;
+   display: flex;
+   width: fit-content;
+   margin: auto;
+   margin-top: 50px;
+}
+
+form input {
+  border: 0;
+  outline: none;
+  padding: 10px 20px;
+  height: 70px;
+  width: 200px;
+  font-size: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.subscribe-home form button {
+  background-color: #3c4e4c;
+  border: none;
+  outline: none;
+  height: 70px;
+  width: 100px;
+  cursor: pointer;
+}
+
 
 .position-relative {
     position: relative;

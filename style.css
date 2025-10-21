@@ -9,11 +9,12 @@ html {
 	text-size-adjust: 100%;
 }
 body {
-    background: linear-gradient(rgba(241, 209, 181, .90), rgba(241, 209, 181, .90)), url(img/flowers-7881557_1280.jpg) center / contain;
-	margin: auto;
+    background: linear-gradient(rgba(241, 209, 181, .93), rgba(241, 209, 181, .90)), url(img/flowers-7881557_1280.jpg) center / contain;
 	font-family: "Lato", serif;
 	line-height: 1.75;
-	width: 100%;
+	width: auto;
+  margin: 0;
+  padding: 0;
 	padding:
 		env(safe-area-inset-top)
 		env(safe-area-inset-right)
@@ -91,7 +92,7 @@ nav {
 
 header {
     position: relative;
-    height: 110vh;
+    height: 155vh;
 }
 header img {
     width: 80px;
@@ -140,14 +141,13 @@ a:focus {
 }
 h1 {
     font-family: "Cinzel", serif;
-    font-size: 5.5vw;
-    position: relative;
-    top: -40px;
-    right: -38px;
     color: black;
     justify-content: center;
-    padding: 20px;
+    width: auto;
+    max-width: 100%;
     text-align: center;
+    font-size: 6vw;
+    margin: 0px auto 30px;
 }
 h2 {
     font-family: "Cinzel", serif;
@@ -214,7 +214,7 @@ header p {
     font-weight: 500;
     display: flex;
     position: relative;
-    top: 90px;
+    top: 60px;
     color: black;
     margin: 0px 30px;
     width: auto;
@@ -243,22 +243,27 @@ header button a {
 }
 
 .hero-image {
-    display: flex;
-    margin-top: 50px;
+    display: block;
 }
 .hero-image img {
     display: flex;
-    width: 25vw;
+    width: 40vw;
     height: auto;
-    margin: auto;
+    margin: 30px auto;
     position: relative;
-    bottom: 35px;
-    left: 60px;
-    outline: 3px solid white;
-    outline-offset: 15px;
+    bottom: 85px;
+    left: 0px;
     border: none;
-    background-color: #f1d185;
-    mix-blend-mode: overlay;
+}
+.hero-image span {
+    font-family: "lato", sans-serif;
+    font-size: 2vh;
+    font-weight: 600;
+    position: relative;
+    top: -40px;
+    display: block;
+    text-align: center;
+  
 }
 .header-video {
     width: 80vw;
@@ -266,7 +271,7 @@ header button a {
     display: block;
     margin: auto;
     position: relative;
-    top: 60px;
+    top: 30px;
 }
 
 #container-anim {
@@ -365,7 +370,7 @@ p {
 .header-btn {
     display: flex;
     position: relative;
-    top: 0px;
+    top: -70px;
     justify-content: center;
 }
 .images-button {
@@ -467,6 +472,7 @@ a:hover::before {
    background: white;
    display: flex;
    width: fit-content;
+   max-width: 100%;
    margin: auto;
    margin-top: 50px;
 }
@@ -476,7 +482,7 @@ form input {
   outline: none;
   padding: 10px 20px;
   height: 70px;
-  width: 200px;
+  width: 50vw;
   font-size: 16px;
   position: relative;
   z-index: 1;
@@ -487,7 +493,8 @@ form input {
   border: none;
   outline: none;
   height: 70px;
-  width: 100px;
+  width: 15vw;
+  max-width: 100%;
   cursor: pointer;
 }
 
@@ -531,16 +538,12 @@ form input {
   flex-direction: column;
 }
 .footer img {
-    height: 110px;
-    width: 85px;
+    height: 10vh;
+    width: auto;
     display: flex;
     margin: auto;
     position: relative;
-    outline: 3px solid white;
-    outline-offset: 15px;
     border: none;
-    background-color: #254441;
-    mix-blend-mode: difference;
 }
 .social-icon,
 .menu-socials {

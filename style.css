@@ -93,7 +93,7 @@ nav {
 
 header {
     position: relative;
-    height: 90vh;
+    height: 95vh;
 }
 header img {
     width: 80px;
@@ -336,13 +336,14 @@ header button a {
   text-align: left;
   align-items: flex-start;
   margin: 0px 5px;
-  padding: 20px;
+  padding: 15px;
 }
 .iphone img {
   margin: auto;
   height: 30vh;
   width: auto;
-  right: 10px;
+  position: relative;
+  right: 15px;
 }
 .mission-container {
     border: 20px solid #254441;
@@ -525,7 +526,7 @@ form input {
 }
 
 .subscribe-home form button {
-  background-color: #3c4e4c;
+  background-color: #254441;
   border: none;
   outline: none;
   height: 70px;
@@ -682,11 +683,10 @@ form input {
   }
 }
 
-/** For tablet devices **/
-@media (min-width: 768px) and (max-width: 1023px) {
-    .custom-shape-divider-bottom-1760639843 svg {
-        width: calc(166% + 1.3px);
-        height: 424px;
+
+@media (min-width: 600px) and (max-width: 1023px) {
+    header {
+      height: 115vh;
     }
 }
 

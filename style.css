@@ -9,7 +9,8 @@ html {
 	text-size-adjust: 100%;
 }
 body {
-    background: linear-gradient(rgba(241, 209, 181, .93), rgba(241, 209, 181, .90)), url(img/flowers-7881557_1280.jpg) center / contain;
+    /* background: linear-gradient(rgba(241, 209, 181, .93), rgba(241, 209, 181, .90)), url(img/flowers-7881557_1280.jpg) center / contain; */
+  background-color: #f1d1b5;
 	font-family: "Lato", serif;
 	line-height: 1.75;
 	width: auto;
@@ -92,7 +93,7 @@ nav {
 
 header {
     position: relative;
-    height: 155vh;
+    height: 90vh;
 }
 header img {
     width: 80px;
@@ -139,6 +140,7 @@ a:focus {
   font-family: 'CooperHewitt';
   src: url('fonts/CooperHewitt-Semibold.otf') format('woff2');
 }
+
 h1 {
     font-family: "Cinzel", serif;
     color: black;
@@ -312,12 +314,46 @@ header button a {
     100% {margin-top:270px;}
 }
 
+.about-home {
+  background-color: #254441;
+}
+.about-home h3 {
+  color: #f3e3d5;
+  margin-top: 30px;
+}
+.about-home p {
+  color: #f3e3d5;
+}
+.iphone {
+  display: flex;
+  margin: auto;
+  height: 30vh;
+  width: auto;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.iphone p {
+  text-align: left;
+  align-items: flex-start;
+  margin: 0px 5px;
+  padding: 20px;
+}
+.iphone img {
+  margin: auto;
+  height: 30vh;
+  width: auto;
+  right: 10px;
+}
 .mission-container {
-    border: 40px solid #254441;
+    border: 20px solid #254441;
     position: relative;
     padding: 5px;
     display: grid;
     place-items: center;
+}
+.mission-container img {
+  height: 30vh;
+  width: auto;
 }
 section {
     padding: 35px 20px;
@@ -503,6 +539,7 @@ form input {
     position: relative;
     margin: 0;
     padding: 0;
+    top: 10px;
 }
 
 .custom-shape-divider-bottom-1760639843 {

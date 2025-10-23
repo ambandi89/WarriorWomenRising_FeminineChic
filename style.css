@@ -500,6 +500,83 @@ a:hover::before {
     place-items: center;
     padding: 60px;
 }
+
+    .testimonial-section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 80px 20px;
+    }
+
+    .testimonial {
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, #1f1f1f, #2a2a2a);
+      border-radius: 20px;
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+      margin-bottom: 60px;
+      padding: 40px;
+      gap: 40px;
+      transform: translateY(50px);
+    }
+
+    .avatar {
+      flex-shrink: 0;
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 4px solid #ffffff44;
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .testimonial-content {
+      flex: 1;
+    }
+
+    .quote {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: #aaa;
+    }
+
+    .author {
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #ff5e99;
+    }
+
+    .role {
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    .lottie-wrapper {
+      max-width: 100px;
+    }
+
+    @media (max-width: 768px) {
+      .testimonial {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+      }
+
+      .avatar {
+        width: 100px;
+        height: 100px;
+      }
+
+      .lottie-wrapper {
+        margin-top: 20px;
+      }
+    }
+
 .subscribe-home {
   height: 40vh;
   width: auto;
@@ -682,13 +759,113 @@ form input {
     background-positon-x: 0px;
   }
 }
+@media (min-width: 600px) and (max-width: 800px) {
+   .hero-image {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      place-content: center;
+    }  
+  
+  .hero-image img {
+      height: 45vh;
+      width: auto;
+    }
+      .title {
+      display: block;
+      order: 1;
+      margin: auto;
+    }
+    .title h1 {
+      font-size: 7vh;
+      text-align: left;
+    }
+    .title span {
+      text-align: left;
+    }
+    .hosts-home {
+      height: 85vh;
+      width: auto;
+    }
+}
 
-
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 801px) and (max-width: 1300px) {
     header {
+      height: 110vh;
+    }
+    nav {
+        display: none;
+	}
+    .off-screen-menu {
+      background: none;
+        font-size: 18px;
+        right: 40px;
+        height: 110px;
+        width: auto;
+        text-transform: uppercase;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        padding-right: 20px;
+    }
+	ul {
+        display: flex;
+        margin-right: auto;
+        /* gap: 40px; */
+        padding: 0;
+    }
+    .off-screen-menu ul li a {
+        color: black;
+    }
+    .hero-image {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      place-content: center;
+    }
+    .title {
+      display: block;
+      order: 1;
+      margin: auto;
+    }
+    .title h1 {
+      font-size: 8vh;
+      text-align: left;
+    }
+    .title span {
+      text-align: left;
+    }
+    .hero-image img {
+      height: 65vh;
+      width: auto;
+    }
+    .about-home {
+      height: 90vh;
+    }
+    .iphone img {
+      height: 45vh;
+      width: auto;
+    }
+    .hosts-home {
       height: 115vh;
+    }
+    .host-images {
+      margin-top: 65px;
+    }
+    section {
+      padding: 60px 20px;
+    }
+    .btn {
+      width: 225px;
+      height: 75px;
+      margin: 20px;
+    }
+    .episodes {
+      margin-top: 65px;
+    }
+    .contact-home {
+      height: 65vh;
+      width: auto;
     }
 }
 
 
-
+    

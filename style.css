@@ -367,8 +367,7 @@ main section h3 {
     opacity: 100%;
 }
 .hosts-home {
-   
-    height: 75vh;
+    height: 90vh;
     width: auto;
     margin: auto;
     display: grid;
@@ -393,9 +392,11 @@ section p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px;
-    margin-top: 50px;
-    gap: 50px;
+}
+.host-images img {
+  height: 35vh;
+  width: auto;
+  border-radius: 35%;
 }
 p {
     margin: auto;
@@ -783,7 +784,7 @@ form input {
       text-align: left;
     }
     .hosts-home {
-      height: 85vh;
+      height: 105vh;
       width: auto;
     }
 }

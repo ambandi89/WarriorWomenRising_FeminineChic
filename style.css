@@ -91,7 +91,7 @@ nav {
     z-index: 3;
 }
 
-header {
+.home-header {
     position: relative;
     height: 95vh;
 }
@@ -608,6 +608,25 @@ form input {
   cursor: pointer;
 }
 
+/* about page */
+.about-main img {
+  height: 30vh;
+  width: auto;
+  display: block;
+  margin: auto;
+}
+.about-main h2 {
+  font-size: 4vw;
+  text-align: center;
+  display: block;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+.about-main p {
+  font-size: 2vw;
+}
+
 /* contact page */
 
 .contact-header {
@@ -686,6 +705,26 @@ form input {
     transition: 0.5s;
     overflow: hidden;
     backdrop-filter: blur(15px);
+}
+
+/* listen page */
+
+.search {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  padding: 14px;
+  border-radius: 20px;
+  background: #f6f6f6;
+}
+.search-input {
+  font-size: 16x;
+  font-family: "lato", sans-serif;
+  color: #333333;
+  margin-left: 14px;
+  outline: none;
+  border: none;
+  background: transparent;
 }
 
 /* footer */
@@ -866,8 +905,8 @@ form input {
     }
 }
 
-@media (min-width: 801px) and (max-width: 1300px) {
-    header {
+@media (min-width: 801px) and (max-width: 1600px) {
+    .home-header {
       height: 110vh;
     }
     nav {
@@ -887,10 +926,7 @@ form input {
     }
 	ul {
         display: flex;
-        margin-right: auto;
-        /* gap: 40px; */
-        padding: 0;
-        margin-left: 45px;
+        margin-right: 150px;
     }
     .off-screen-menu ul li a {
         color: #254441;
@@ -924,7 +960,7 @@ form input {
       width: auto;
     }
     .hosts-home {
-      height: 115vh;
+      height: 130vh;
     }
     .host-images {
       margin-top: 65px;

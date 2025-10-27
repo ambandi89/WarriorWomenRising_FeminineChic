@@ -16,9 +16,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="contact-header">
         <div class="menu-container">
-            <img src="img/WWpinklogo.png" alt="Need PNG logo">
+            <img src="img/WWpinklogo.png" alt="logo">
         <nav>
             <div class="ham-menu">
                 <span></span>
@@ -37,7 +37,30 @@
         </div>
         </div>
     </header>
-    <main>
+  <main>
+    <div class="contact-container">
+        <form action="https://formsubmit.co/ambandi89@gmail.com" method="POST" class="contact">
+          <!-- honeypot -->
+          <input type="text" name="_honey" style="display: none;">
+
+          <!-- disable captcha -->
+           <input type="hidden" name="_captcha" value="false">
+
+            <div class="contact-title">
+                <h2>Get in Touch</h2>
+                
+                <hr>
+            </div>
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <div class="contact-btn">
+            <div class="btn">
+              <button type="submit">Submit</button>
+            </div>
+            </div>
+        </form>
+    </div>
   </main>
     <section class="position-relative">
 

@@ -670,16 +670,12 @@ form input {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 185px;
     height: 50px;
     margin: 20px;
     background: rgba(255, 255, 255, 0.051);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    border-top: 1px solid rgba(250, 52, 52, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(250, 52, 52, 0.1);
     z-index: 10;
     color: #254441;
     border-radius: 30px;

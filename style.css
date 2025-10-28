@@ -720,7 +720,7 @@ form input {
   height: 10vh;
 }
 .contact-container {
-    height: 100vh;
+    height: 75vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;

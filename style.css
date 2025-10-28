@@ -382,14 +382,7 @@ section p {
     color: #254441;
     margin-top: 50px;
 }
-#kafi {
-    border-radius: 50%;
-    height: 15vh;
-}
-#ashley {
-    border-radius: 50%;
-    height: 15vh;
-}
+
 .host-images {
     display: flex;
     justify-content: center;
@@ -510,54 +503,121 @@ a:hover::before {
       padding: 80px 20px;
     }
 
-    .testimonial {
-      display: flex;
-      align-items: center;
-      background: black;
-      border-radius: 20px;
-      /* box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4); */
-      margin-bottom: 10px;
-      padding: 40px;
-      gap: 40px;
-      transform: translateY(50px);
-    }
+    
+.content-wrapper {
+	max-width: 100rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 5rem;
+  padding-top: 5rem;
+}
 
-    .avatar {
-      flex-shrink: 0;
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      overflow: hidden;
-      border: 4px solid #ffffff44;
-    }
 
-    .avatar img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+.wrapper-for-arrows {
+	position: relative;
+	width: 70%;
+	border-radius: 2rem;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	overflow: hidden;
+	display: grid;
+	place-items: center;
+}
 
-    .testimonial-content {
-      flex: 1;
-    }
+.review-wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: calc(2rem + 1vmin);
+	width: 100%;
+}
 
-    .quote {
-      font-size: 1.2rem;
-      line-height: 1.6;
-      margin-bottom: 20px;
-      color: #aaa;
-    }
+#imgDiv {
+	border-radius: 50%;
+	width: calc(6rem + 4vmin);
+	height: calc(6rem + 4vmin);
+	position: relative;
+	box-shadow: 5px -3px #254441;
+	background-size: cover;
+	margin-bottom: calc(0.7rem + 0.5vmin);
+}
 
-    .author {
-      font-weight: bold;
-      font-size: 1.1rem;
-      color: #ff5e99;
-    }
+#personName {
+	margin-bottom: calc(0.7rem + 0.5vmin);
+	font-size: calc(1rem + 0.5vmin);
+	letter-spacing: calc(0.1rem + 0.1vmin);
+	font-weight: bold;
+}
 
-    .role {
-      font-size: 0.9rem;
-      color: #aaa;
-    }
+#profession {
+	font-size: calc(0.8rem + 0.3vmin);
+	margin-bottom: calc(0.7rem + 0.5vmin);
+	color: #254441;
+}
+
+#description {
+	font-size: calc(0.8rem + 0.3vmin);
+	width: 70%;
+	max-width: 40rem;
+	text-align: center;
+	margin-bottom: calc(1.4rem + 1vmin);
+	color: rgb(92, 92, 92);
+	line-height: 2rem;
+}
+
+.arrow-wrap {
+	position: absolute;
+	top: 50%;
+}
+
+.arrow {
+	width: calc(1.4rem + 0.6vmin);
+	height: calc(1.4rem + 0.6vmin);
+	border: solid #254441;
+	border-width: 0 calc(0.5rem + 0.2vmin) calc(0.5rem + 0.2vmin) 0;
+	cursor: pointer;
+	transition: transform 0.3s;
+}
+
+.arrow:hover {
+	transition: 0.3s;
+	transform: scale(1.15);
+}
+
+.left-arrow-wrap {
+	left: 5%;
+	transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+}
+
+.right-arrow-wrap {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	right: 5%;
+}
+
+
+@keyframes moveHead {
+	0% {
+	}
+	25% {
+		transform: translate(0.5rem, 1rem) rotate(5deg);
+	}
+	100% {
+		transform: translate(0, 0) rotate(-5deg);
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.content-wrapper {
+		width: 100%;
+	}
+}
+
+
+    
 
     @media (max-width: 768px) {
       .testimonial {
@@ -625,6 +685,33 @@ form input {
 }
 .about-main p {
   font-size: 2vw;
+}
+
+#kafi {
+    border-radius: 50%;
+    height: 15vw;
+}
+#ashley {
+    transform: rotate(15deg);
+    border-radius: 50%;
+    height: 15vw;
+}
+.ashleysphotos {
+  display: block;
+}
+.ashleysphotos img {
+  max-width: 100%;
+  margin: 20px auto;
+}
+.kafisphotos {
+  display: block;
+}
+.kafisphotos img {
+  max-width: 100%;
+  margin: 20px auto;
+}
+.about-hosts p {
+  margin-top: 20px;
 }
 
 /* contact page */
@@ -903,6 +990,15 @@ form input {
       height: 105vh;
       width: auto;
     }
+  
+}
+@media (min-width: 650px) {
+    .ashleysphotos {
+    display: flex;
+}
+    .kafisphotos {
+    display: flex;
+}
 }
 
 @media (min-width: 801px) and (max-width: 1600px) {
@@ -980,6 +1076,18 @@ form input {
       height: 65vh;
       width: auto;
     }
+    .kafisphotos img {
+      max-width: 100%;
+      margin: 20px auto;
+      height: 45vh;
+      width: auto;
+}
+    .ashleysphotos img {
+      max-width: 100%;
+      margin: 20px auto;
+      height: 45vh;
+      width: auto;
+}
 }
 
 

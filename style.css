@@ -348,7 +348,7 @@ header button a {
   right: 15px;
 }
 .mission-container {
-    border: 20px solid #254441;
+    border: 40px solid #254441;
     position: relative;
     padding: 5px;
     display: grid;
@@ -497,11 +497,16 @@ a:hover::before {
     padding: 60px;
 }
 
-    .testimonial-section {
-      max-width: 1200px;
-      margin: auto;
-      padding: 80px 20px;
-    }
+.testimonial-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 20px;
+  background-color: #254441;
+}
+.testimonial-section h3 {
+  color: #f3e3d5;
+}
+
 
     
 .content-wrapper {
@@ -519,7 +524,7 @@ a:hover::before {
 	position: relative;
 	width: 70%;
 	border-radius: 2rem;
-	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	box-shadow: rgba(99, 99, 99, 0.8) 0px 2px 8px 0px;
 	overflow: hidden;
 	display: grid;
 	place-items: center;
@@ -539,7 +544,7 @@ a:hover::before {
 	width: calc(6rem + 4vmin);
 	height: calc(6rem + 4vmin);
 	position: relative;
-	box-shadow: 5px -3px #254441;
+	box-shadow: 5px -3px #f3e3d5;
 	background-size: cover;
 	margin-bottom: calc(0.7rem + 0.5vmin);
 }
@@ -549,12 +554,13 @@ a:hover::before {
 	font-size: calc(1rem + 0.5vmin);
 	letter-spacing: calc(0.1rem + 0.1vmin);
 	font-weight: bold;
+  color: #f3e3d5;
 }
 
 #profession {
 	font-size: calc(0.8rem + 0.3vmin);
 	margin-bottom: calc(0.7rem + 0.5vmin);
-	color: #254441;
+	color: #f3e3d5;
 }
 
 #description {
@@ -563,7 +569,7 @@ a:hover::before {
 	max-width: 40rem;
 	text-align: center;
 	margin-bottom: calc(1.4rem + 1vmin);
-	color: rgb(92, 92, 92);
+	color: #f3e3d5;
 	line-height: 2rem;
 }
 
@@ -575,7 +581,7 @@ a:hover::before {
 .arrow {
 	width: calc(1.4rem + 0.6vmin);
 	height: calc(1.4rem + 0.6vmin);
-	border: solid #254441;
+	border: solid #f3e3d5;
 	border-width: 0 calc(0.5rem + 0.2vmin) calc(0.5rem + 0.2vmin) 0;
 	cursor: pointer;
 	transition: transform 0.3s;
@@ -636,6 +642,7 @@ a:hover::before {
 .subscribe-home {
   height: 40vh;
   width: auto;
+  margin-top: 100px;
 }
 
 .subscribe-home form {
@@ -680,6 +687,7 @@ form input {
 .about-hero span {
   font-family: "lato", sans-serif;
   font-size: 4vw;
+  font-weight: 600;
   text-align: center;
   position: relative;
   top: -40px;
@@ -718,7 +726,7 @@ form input {
   color: #f3e3d5;
 }
 .ashley-container {
-  margin-bottom: 200px;
+  margin-bottom: 125px;
 }
 .kafi-container {
   margin-bottom: 125px;

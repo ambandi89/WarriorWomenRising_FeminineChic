@@ -677,9 +677,19 @@ form input {
   display: grid;
   place-content: center;
 }
+.about-hero span {
+  font-family: "lato", sans-serif;
+  font-size: 4vw;
+  text-align: center;
+  position: relative;
+  top: -40px;
+  color: #254441;
+
+}
 
 .about-main {
   margin-bottom: 80px;
+  
 }
 
 .about-main img {
@@ -688,6 +698,9 @@ form input {
   display: block;
   margin: 30px auto;
 }
+.about-hosts {
+  background: #254441;
+}
 .about-hosts h2 {
   font-size: 4vw;
   text-align: center;
@@ -695,12 +708,20 @@ form input {
   position: relative;
   top: 0;
   right: 0;
+  color: #f3e3d5;
 }
 .about-hosts p {
   display: block;
   font-size: 2.5vw;
   text-align: left;
   line-height: 2.25;
+  color: #f3e3d5;
+}
+.ashley-container {
+  margin-bottom: 200px;
+}
+.kafi-container {
+  margin-bottom: 125px;
 }
 
 #kafi {
@@ -846,6 +867,13 @@ form input {
     margin: 0;
     padding: 0;
     top: 10px;
+}
+
+.position-relative-bottom {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 0px;
 }
 
 .custom-shape-divider-bottom-1760639843 {

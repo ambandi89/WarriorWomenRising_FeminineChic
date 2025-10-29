@@ -498,7 +498,6 @@ a:hover::before {
 }
 
 .testimonial-section {
-  max-width: 1200px;
   margin: auto;
   padding: 80px 20px;
   background-color: #254441;

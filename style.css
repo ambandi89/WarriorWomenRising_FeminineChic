@@ -669,13 +669,20 @@ form input {
 }
 
 /* about page */
+
+.about-hero {
+  margin: 40px auto;
+  height: 40vh;
+  width: auto;
+}
+
 .about-main img {
   height: 30vh;
   width: auto;
   display: block;
-  margin: auto;
+  margin: 30px auto;
 }
-.about-main h2 {
+.about-hosts h2 {
   font-size: 4vw;
   text-align: center;
   display: block;
@@ -683,35 +690,46 @@ form input {
   top: 0;
   right: 0;
 }
-.about-main p {
-  font-size: 2vw;
+.about-hosts p {
+  display: block;
+  font-size: 2.5vw;
+  text-align: left;
+  line-height: 2.25;
 }
 
 #kafi {
     border-radius: 50%;
-    height: 15vw;
+    height: 35vw;
+    float: left;
+    margin: 10px;
 }
 #ashley {
     transform: rotate(15deg);
     border-radius: 50%;
-    height: 15vw;
+    height: 35vw;
+    float: left;
+    margin: 10px;
 }
 .ashleysphotos {
-  display: block;
+  display: flex;
+  gap: 10px;
+  margin: auto;
 }
 .ashleysphotos img {
   max-width: 100%;
   margin: 20px auto;
 }
 .kafisphotos {
-  display: block;
+  display: flex;
+  gap: 10px;
+  margin: auto;
 }
 .kafisphotos img {
   max-width: 100%;
   margin: 20px auto;
 }
 .about-hosts p {
-  margin-top: 20px;
+  margin: 30px auto;
 }
 
 /* contact page */

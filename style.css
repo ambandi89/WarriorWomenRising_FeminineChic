@@ -672,8 +672,14 @@ form input {
 
 .about-hero {
   margin: 40px auto;
-  height: 40vh;
+  height: 20vh;
   width: auto;
+  display: grid;
+  place-content: center;
+}
+
+.about-main {
+  margin-bottom: 80px;
 }
 
 .about-main img {
@@ -1067,14 +1073,14 @@ form input {
       width: auto;
     }
     .about-home {
-      height: 90vh;
+      height: 110vh;
     }
     .iphone img {
       height: 45vh;
       width: auto;
     }
     .hosts-home {
-      height: 130vh;
+      height: 180vh;
     }
     .host-images {
       margin-top: 65px;
@@ -1105,6 +1111,9 @@ form input {
       margin: 20px auto;
       height: 45vh;
       width: auto;
+}
+.about-hero {
+  height: 60vh;
 }
 }
 

@@ -392,15 +392,15 @@ section p {
   height: 50vh;
   width: auto;
   border-radius: 35%;
-    box-shadow: 0 0 30px 15px #d4b483;
-    margin-top: 30px;
+  box-shadow: 9px 6px 20px 7px #d4b483;
+  margin-top: 30px;
 }
 p {
     margin: auto;
     text-align: center;
 }
 .episodes {
-  margin-top: 50px;
+  margin: 40px auto;
 }
 .header-btn {
     display: flex;
@@ -409,6 +409,12 @@ p {
     justify-content: center;
 }
 .images-button {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.episode-btn {
     display: flex;
     position: relative;
     justify-content: center;
@@ -489,7 +495,10 @@ a:hover::before {
   border-radius: 30px;
   transition-delay: 0.5s;
 }
-
+.episodes-home {
+  height: 90vh;
+  width: auto;
+}
 .contact-home {
     height: 45vh;
     width: auto;
@@ -710,7 +719,7 @@ form input {
   background: #254441;
 }
 .about-hosts h2 {
-  font-size: 4vw;
+  font-size: 5vw;
   text-align: center;
   display: block;
   position: relative;
@@ -720,7 +729,8 @@ form input {
 }
 .about-hosts p {
   display: block;
-  font-size: 2.5vw;
+  font-size: 3vw;
+  /* font-size: 16px; */
   text-align: left;
   line-height: 2.25;
   color: #f3e3d5;
@@ -856,12 +866,17 @@ form input {
 }
 
 /* listen page */
-
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  
+}
 .search {
   width: max-content;
   display: flex;
   align-items: center;
-  padding: 14px;
   border-radius: 20px;
   background: #f6f6f6;
 }
@@ -1067,16 +1082,6 @@ form input {
     .kafisphotos {
     display: flex;
 }
-#ashley {
-    transform: rotate(15deg);
-    border-radius: 50%;
-    height: 35vw;
-    float: left;
-    margin: 10px;
-    border: 2px solid white;
-    box-shadow: 0 0 10px 5px #d4b483;
-    filter: blur(radius);
-}
 }
 @media (min-width: 801px) and (max-width: 1600px) {
     .home-header {
@@ -1165,16 +1170,7 @@ form input {
       height: 45vh;
       width: auto;
 }
-#ashley {
-    transform: rotate(15deg);
-    border-radius: 50%;
-    height: 35vw;
-    float: left;
-    margin: 10px;
-    border: 2px solid white;
-    box-shadow: 0 0 10px 5px #d4b483;
-    filter: blur(radius);
-}
+
 .about-hero {
   height: 60vh;
 }

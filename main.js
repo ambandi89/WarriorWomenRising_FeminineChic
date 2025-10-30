@@ -24,11 +24,11 @@ let isChickenVisible;
 let people = [
 	{
 		photo:
-			'url("https://cdn.pixabay.com/photo/2018/03/06/22/57/portrait-3204843_960_720.jpg")',
-		name: "Susan Smith",
-		profession: "WEB DEVELOPER",
+			'url("img/abbyb.jpeg")',
+		name: "Abby B.",
+		profession: "WEB DESIGNER/DEVELOPER",
 		description:
-			"Cheese and biscuits chalk and cheese fromage frais. Cheeseburger caerphilly cheese slices chalk and cheese cheeseburger mascarpone danish fontina rubber cheese. Squirty cheese say cheese manchego jarlsberg lancashire taleggio cheese and wine squirty cheese."
+			"As a woman veteran, this podcast is such a breath of fresh air. Hearing the honest, varied perspectives on life after the military is both inspiring and comforting. My own post-Army journey had plenty of twists and turns, and I wish I’d had something like this to listen to during my transition."
 	},
 
 	{

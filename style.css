@@ -148,7 +148,7 @@ h1 {
     width: auto;
     max-width: 100%;
     text-align: center;
-    font-size: 6vw;
+    font-size: 7vw;
     margin: 0px auto 30px;
 }
 h2 {
@@ -259,7 +259,7 @@ header button a {
 }
 .hero-image span {
     font-family: "lato", sans-serif;
-    font-size: 2vh;
+    font-size: 3vh;
     font-weight: 600;
     position: relative;
     top: -40px;
@@ -354,10 +354,10 @@ header button a {
     display: grid;
     place-items: center;
 }
-.mission-container img {
+/* .mission-container img {
   height: 30vh;
   width: auto;
-}
+} */
 section {
     padding: 35px 20px;
 }
@@ -392,6 +392,10 @@ section p {
   height: 35vh;
   width: auto;
   border-radius: 35%;
+  /* border: 2px solid white; */
+    box-shadow: 0 0 10px 5px #d4b483;
+    filter: blur(radius);
+    margin-top: 30px;
 }
 p {
     margin: auto;
@@ -524,6 +528,9 @@ a:hover::before {
 	width: 70%;
 	border-radius: 2rem;
 	box-shadow: rgba(99, 99, 99, 0.8) 0px 2px 8px 0px;
+  border: 2px solid white;
+  box-shadow: 0 0 10px 5px #d4b483;
+  filter: blur(radius);
 	overflow: hidden;
 	display: grid;
 	place-items: center;
@@ -736,6 +743,9 @@ form input {
     height: 35vw;
     float: left;
     margin: 10px;
+    border: 2px solid white;
+    box-shadow: 0 0 10px 5px #d4b483;
+    filter: blur(radius);
 }
 #ashley {
     transform: rotate(15deg);
@@ -743,6 +753,9 @@ form input {
     height: 35vw;
     float: left;
     margin: 10px;
+    border: 2px solid white;
+    box-shadow: 0 0 10px 5px #d4b483;
+    filter: blur(radius);
 }
 .ashleysphotos {
   display: flex;
@@ -752,6 +765,9 @@ form input {
 .ashleysphotos img {
   max-width: 100%;
   margin: 20px auto;
+  border: 2px solid white;
+  box-shadow: 0 0 10px 5px #d4b483;
+  filter: blur(radius);
 }
 .kafisphotos {
   display: flex;
@@ -761,6 +777,9 @@ form input {
 .kafisphotos img {
   max-width: 100%;
   margin: 20px auto;
+  border: 2px solid white;
+  box-shadow: 0 0 10px 5px #d4b483;
+  filter: blur(radius);
 }
 .about-hosts p {
   margin: 30px auto;

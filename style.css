@@ -369,7 +369,7 @@ main section h3 {
     opacity: 100%;
 }
 .hosts-home {
-    height: 90vh;
+    height: 110vh;
     width: auto;
     margin: auto;
     display: grid;
@@ -389,12 +389,10 @@ section p {
     align-items: center;
 }
 .host-images img {
-  height: 35vh;
+  height: 50vh;
   width: auto;
   border-radius: 35%;
-  /* border: 2px solid white; */
-    box-shadow: 0 0 10px 5px #d4b483;
-    /* filter: blur(radius); */
+    box-shadow: 0 0 30px 15px #d4b483;
     margin-top: 30px;
 }
 p {
@@ -527,10 +525,9 @@ a:hover::before {
 	position: relative;
 	width: 70%;
 	border-radius: 2rem;
-	box-shadow: rgba(99, 99, 99, 0.8) 0px 2px 8px 0px;
+	box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
   border: 2px solid white;
   box-shadow: 0 0 10px 5px #d4b483;
-  filter: blur(radius);
 	overflow: hidden;
 	display: grid;
 	place-items: center;
@@ -741,8 +738,6 @@ form input {
     float: left;
     margin: 10px;
     border: 2px solid white;
-    box-shadow: 0 0 10px 5px #d4b483;
-    filter: blur(radius);
 }
 #ashley {
     transform: rotate(15deg);
@@ -751,9 +746,6 @@ form input {
     float: left;
     margin: 10px;
     border: 2px solid white;
-    -webkit-box-shadow: 0 0 10px 5px #d4b483;
-    box-shadow: 0 0 10px 5px #d4b483;
-    filter: blur(radius);
 }
 .ashleysphotos {
   display: flex;
@@ -1063,7 +1055,7 @@ form input {
       text-align: left;
     }
     .hosts-home {
-      height: 105vh;
+      height: 145vh;
       width: auto;
     }
   

@@ -394,7 +394,7 @@ section p {
   border-radius: 35%;
   /* border: 2px solid white; */
     box-shadow: 0 0 10px 5px #d4b483;
-    filter: blur(radius);
+    /* filter: blur(radius); */
     margin-top: 30px;
 }
 p {
@@ -628,9 +628,6 @@ a:hover::before {
 	}
 }
 
-
-    
-
     @media (max-width: 768px) {
       .testimonial {
         flex-direction: column;
@@ -754,6 +751,7 @@ form input {
     float: left;
     margin: 10px;
     border: 2px solid white;
+    -webkit-box-shadow: 0 0 10px 5px #d4b483;
     box-shadow: 0 0 10px 5px #d4b483;
     filter: blur(radius);
 }
@@ -1077,8 +1075,17 @@ form input {
     .kafisphotos {
     display: flex;
 }
+#ashley {
+    transform: rotate(15deg);
+    border-radius: 50%;
+    height: 35vw;
+    float: left;
+    margin: 10px;
+    border: 2px solid white;
+    box-shadow: 0 0 10px 5px #d4b483;
+    filter: blur(radius);
 }
-
+}
 @media (min-width: 801px) and (max-width: 1600px) {
     .home-header {
       height: 110vh;
@@ -1165,6 +1172,16 @@ form input {
       margin: 20px auto;
       height: 45vh;
       width: auto;
+}
+#ashley {
+    transform: rotate(15deg);
+    border-radius: 50%;
+    height: 35vw;
+    float: left;
+    margin: 10px;
+    border: 2px solid white;
+    box-shadow: 0 0 10px 5px #d4b483;
+    filter: blur(radius);
 }
 .about-hero {
   height: 60vh;

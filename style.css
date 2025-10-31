@@ -90,6 +90,10 @@ nav {
     background-color: #fff;
     z-index: 3;
 }
+.active-menu {
+  font-style: italic;
+  text-decoration: underline;
+}
 
 .home-header {
     position: relative;
@@ -348,7 +352,7 @@ header button a {
   right: 15px;
 }
 .mission-container {
-    border: 40px solid #254441;
+    border: 65px solid #254441;
     position: relative;
     padding: 5px;
     display: grid;
@@ -371,7 +375,7 @@ main section h3 {
 .hosts-home {
     height: 110vh;
     width: auto;
-    margin: auto;
+    margin: 40px auto;
     display: grid;
     place-items: center;
 }
@@ -498,11 +502,13 @@ a:hover::before {
 .episodes-home {
   height: 90vh;
   width: auto;
+  margin-bottom: 50px;
 }
 .contact-home {
     height: 45vh;
     width: auto;
     margin: auto;
+    margin-top: 50px;
     display: grid;
     place-items: center;
     padding: 60px;
@@ -535,8 +541,8 @@ a:hover::before {
 	width: 70%;
 	border-radius: 2rem;
 	box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
-  border: 2px solid white;
-  box-shadow: 0 0 10px 5px #d4b483;
+  border: 1px solid white;
+  box-shadow: 7px 6px 11px 0px #d4b483;
 	overflow: hidden;
 	display: grid;
 	place-items: center;
@@ -871,7 +877,7 @@ form input {
   justify-content: center;
   align-items: center;
   margin: 50px auto;
-  
+  margin-top: 0px;
 }
 .search {
   width: max-content;
@@ -889,7 +895,31 @@ form input {
   border: none;
   background: transparent;
 }
+.search img {
+  padding: 10px;
+}
+.listen-episodes {
+  height: 165vh;
+  background-color: #254441;
+  padding: 20px;
+}
 
+.listen-episodes iframe:first-child {
+  margin-top: 100px;
+}
+.listen-episodes iframe:last-child {
+  margin-bottom: 150px;
+}
+.listen-episodes iframe {
+  margin: 30px auto;
+}
+.episodes-hero {
+  margin: 40px auto;
+  height: 20vh;
+  width: auto;
+  display: grid;
+  place-content: center;
+}
 /* footer */
 
 
@@ -1092,8 +1122,8 @@ form input {
 	}
     .off-screen-menu {
       background: none;
-        font-size: 18px;
-        right: 40px;
+        font-size: 16px;
+        right: 0px;
         height: 110px;
         width: auto;
         text-transform: uppercase;
@@ -1101,6 +1131,7 @@ form input {
         align-items: center;
         justify-content: center;
         padding-right: 20px;
+        z-index: 10;
     }
 	ul {
         display: flex;
@@ -1108,6 +1139,11 @@ form input {
     }
     .off-screen-menu ul li a {
         color: #254441;
+    }
+    .off-screen-menu ul li a:hover,
+    .off-screen-menu ul li a:focus {
+	    color: gray;
+      z-index: 99;
     }
     .hero-image {
       display: grid;
@@ -1172,6 +1208,9 @@ form input {
 }
 
 .about-hero {
+  height: 60vh;
+}
+.episodes-hero {
   height: 60vh;
 }
 }

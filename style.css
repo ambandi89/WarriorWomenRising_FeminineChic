@@ -353,15 +353,17 @@ header button a {
 }
 .mission-container {
     border: 65px solid #254441;
+    border-left: 40px solid #254441;
+    border-right: 40px solid #254441;
     position: relative;
     padding: 5px;
     display: grid;
     place-items: center;
 }
-/* .mission-container img {
-  height: 30vh;
-  width: auto;
-} */
+.mission-home {
+  padding: 25px 5px;
+  
+}
 section {
     padding: 35px 20px;
 }
@@ -540,9 +542,8 @@ a:hover::before {
 	position: relative;
 	width: 70%;
 	border-radius: 2rem;
-	box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+	box-shadow: rgba(212, 180, 131, 0.5) 7px 6px 11px 0px;
   border: 1px solid white;
-  box-shadow: 7px 6px 11px 0px #d4b483;
 	overflow: hidden;
 	display: grid;
 	place-items: center;
@@ -1113,7 +1114,7 @@ form input {
     display: flex;
 }
 }
-@media (min-width: 801px) and (max-width: 1600px) {
+@media (min-width: 801px) and (max-width: 1200px) {
     .home-header {
       height: 110vh;
     }
@@ -1167,7 +1168,7 @@ form input {
       width: auto;
     }
     .about-home {
-      height: 110vh;
+      height: 80vh;
     }
     .iphone img {
       height: 45vh;
@@ -1179,6 +1180,10 @@ form input {
     .host-images {
       margin-top: 65px;
     }
+    .host-images img {
+      height: 60vh;
+      margin-top: 0px;
+    }
     section {
       padding: 60px 20px;
     }
@@ -1189,6 +1194,10 @@ form input {
     }
     .episodes {
       margin-top: 65px;
+      max-width: 900px;
+    }
+    .episodes-home {
+      height: 100vh;
     }
     .contact-home {
       height: 65vh;
@@ -1206,7 +1215,123 @@ form input {
       height: 45vh;
       width: auto;
 }
-
+.about-hosts p {
+  margin: 30px;
+}
+.about-hero {
+  height: 60vh;
+}
+.episodes-hero {
+  height: 60vh;
+}
+}
+@media (min-width: 1201px) and (max-width: 1600px) {
+    .home-header {
+      height: 110vh;
+    }
+    nav {
+        display: none;
+	}
+    .off-screen-menu {
+      background: none;
+        font-size: 16px;
+        right: 0px;
+        height: 110px;
+        width: auto;
+        text-transform: uppercase;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        padding-right: 20px;
+        z-index: 10;
+    }
+	ul {
+        display: flex;
+        margin-right: 150px;
+    }
+    .off-screen-menu ul li a {
+        color: #254441;
+    }
+    .off-screen-menu ul li a:hover,
+    .off-screen-menu ul li a:focus {
+	    color: gray;
+      z-index: 99;
+    }
+    .hero-image {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      place-content: center;
+    }
+    .title {
+      display: block;
+      order: 1;
+      margin: auto;
+    }
+    .title h1 {
+      font-size: 8vh;
+      text-align: left;
+    }
+    .title span {
+      text-align: left;
+    }
+    .hero-image img {
+      height: 65vh;
+      width: auto;
+    }
+    .about-home {
+      height: 100vh;
+    }
+    .iphone img {
+      height: 45vh;
+      width: auto;
+    }
+    .hosts-home {
+      height: 215vh;
+    }
+    .host-images {
+      margin-top: 65px;
+    }
+    .host-images img {
+      height: 70vh;
+      margin-top: 0px;
+    }
+    .hosts-home p {
+      max-width: 1200px;
+    }
+    section {
+      padding: 60px 20px;
+    }
+    .btn {
+      width: 225px;
+      height: 75px;
+      margin: 20px;
+    }
+    .episodes {
+      margin-top: 65px;
+      max-width: 1200px;
+    }
+    .episodes-home {
+      height: 100vh;
+    }
+    .contact-home {
+      height: 65vh;
+      width: auto;
+    }
+    .kafisphotos img {
+      max-width: 100%;
+      margin: 20px auto;
+      height: 45vh;
+      width: auto;
+}
+    .ashleysphotos img {
+      max-width: 100%;
+      margin: 20px auto;
+      height: 45vh;
+      width: auto;
+}
+.about-hosts p {
+  margin: 30px;
+}
 .about-hero {
   height: 60vh;
 }
@@ -1215,5 +1340,126 @@ form input {
 }
 }
 
+@media (min-width: 1601px) and (max-width: 2000px) {
+    .home-header {
+      height: 110vh;
+    }
+    nav {
+        display: none;
+	}
+    .off-screen-menu {
+      background: none;
+        font-size: 16px;
+        right: 0px;
+        height: 110px;
+        width: auto;
+        text-transform: uppercase;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        padding-right: 20px;
+        z-index: 10;
+    }
+	ul {
+        display: flex;
+        margin-right: 150px;
+    }
+    .off-screen-menu ul li a {
+        color: #254441;
+    }
+    .off-screen-menu ul li a:hover,
+    .off-screen-menu ul li a:focus {
+	    color: gray;
+      z-index: 99;
+    }
+    .hero-image {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      place-content: center;
+    }
+    .title {
+      display: block;
+      order: 1;
+      margin: auto;
+    }
+    .title h1 {
+      font-size: 8vh;
+      text-align: left;
+    }
+    .title span {
+      text-align: left;
+    }
+    .hero-image img {
+      height: 65vh;
+      width: auto;
+    }
+    .about-home {
+      height: 100vh;
+    }
+    .iphone img {
+      height: 45vh;
+      width: auto;
+    }
+    .hosts-home {
+      height: 225vh;
+    }
+    .host-images {
+      margin-top: 65px;
+    }
+    .host-images img {
+      height: 70vh;
+      margin-top: 0px;
+    }
+    .hosts-home p {
+      max-width: 1450px;
+    }
+    section {
+      padding: 60px 20px;
+    }
+    .btn {
+      width: 225px;
+      height: 75px;
+      margin: 20px;
+    }
+    .episodes {
+      margin-top: 65px;
+      max-width: 1200px;
+    }
+    .episodes-home {
+      height: 100vh;
+    }
+    .contact-home {
+      height: 65vh;
+      width: auto;
+    }
+    .kafisphotos img {
+      max-width: 100%;
+      margin: 20px auto;
+      height: 75vh;
+      width: auto;
+}
+    .ashleysphotos img {
+      max-width: 100%;
+      margin: 20px auto;
+      height: 75vh;
+      width: auto;
+}
+.about-hosts p {
+  margin: 30px;
+}
+.about-hero {
+  height: 60vh;
+}
+.episodes-hero {
+  height: 60vh;
+}
+.wrapper-for-arrows {
+  width: auto;
+}
+.content-wrapper {
+  max-width: 2000px;
+}
+}
+  
 
     

@@ -906,6 +906,14 @@ form input {
 .search img {
   padding: 10px;
 }
+.logo-links {
+  display: flex;
+  justify-content: center;
+}
+.logo-links img {
+  height: 10vh;
+  width: auto;
+}
 .listen-episodes {
   height: 165vh;
   background-color: #254441;

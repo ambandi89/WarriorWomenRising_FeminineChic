@@ -690,9 +690,12 @@ form input {
   max-width: 100%;
   cursor: pointer;
 }
+.subscribe-home button:hover {
+	background-color: gray;
+}
 #msg {
-  position: relative;
-  
+  display: flex;
+  justify-content: center;
 }
 
 /* about page */

@@ -170,3 +170,8 @@ window.addEventListener("resize", () => {
 	description.style.height = "100%";
 });
 
+
+// Subscription
+
+
+

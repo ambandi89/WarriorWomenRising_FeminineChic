@@ -690,6 +690,10 @@ form input {
   max-width: 100%;
   cursor: pointer;
 }
+#msg {
+  position: relative;
+  
+}
 
 /* about page */
 

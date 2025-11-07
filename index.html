@@ -226,10 +226,11 @@
 <!-- https://www.youtube.com/watch?v=a8Om25FbaJA -->
         <section class="subscribe-home">
             <h3>Subscribe for E-mail Updates</h3>
-            <form>
+            <form name="submit-to-google-sheet">
                 <input type="email" name="Email" placeholder="Your Email" required>
                 <button type="submit"><img src="img/mail-44042_1280.png" width="30px" alt=""></button>
             </form>
+            <span id="msg">Thank you for subscribing!</span>
 
 
         </section>
@@ -271,6 +272,8 @@
       <li class="menu__item"><a class="menu__link" href="about.html">About</a></li>
       <li class="menu__item"><a class="menu__link" href="listen.html">Listen</a></li>
       <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+      <li class="menu__item"><a class="menu__link" href="shop.html">Shop</a></li>
+      <li class="menu__item"><a class="menu__link" href="donate.html">Support</a></li>
     </ul>
     <p>Made with &hearts; SageBerryDesign<i class='bx bx-heart-circle'></i></p>
   </footer>
@@ -281,5 +284,24 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="main.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwREF0zU18e6YBww8min9TXvQ1232UXAUifU1udEza6OXzIAu8X0F-5tU1x8QqFszZudQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Thank you for subscribing!"
+                setTimeout(function(){
+                    msg.innerHTML = " "
+                },5000)
+                form.reset()
+            })
+
+            .catch(error => console.error('Error!', error.message))
+        })
+</script>
 </body>
 </html>

@@ -96,7 +96,7 @@ nav {
 
 .home-header {
     position: relative;
-    height: 55rem;
+    height: 53rem;
 }
 #logo {
     width: 80px;
@@ -1168,7 +1168,7 @@ form input {
 }
 @media (min-width: 801px) and (max-width: 1200px) {
     .home-header {
-      height: 65rem;
+      height: 62rem;
     }
     nav {
         display: none;
@@ -1284,7 +1284,7 @@ form input {
 }
 @media (min-width: 1201px) and (max-width: 1600px) {
     .home-header {
-      height: 67rem;
+      height: 62rem;
     }
     nav {
         display: none;
@@ -1404,7 +1404,7 @@ form input {
 
 @media (min-width: 1601px) and (max-width: 2000px) {
     .home-header {
-      height: 67rem;
+      height: 60rem;
     }
     nav {
         display: none;

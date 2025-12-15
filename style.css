@@ -425,7 +425,7 @@ section p {
     align-items: center;
 }
 .host-images img {
-  height: 50vh;
+  height: 20rem;
   width: auto;
   border-radius: 35%;
   box-shadow: 9px 6px 20px 7px #d4b483;
@@ -952,7 +952,7 @@ form input {
   width: auto;
 }
 .listen-episodes {
-  height: 165vh;
+  height: 95rem;
   background-color: #254441;
   padding: 20px;
 }
@@ -968,7 +968,7 @@ form input {
 }
 .episodes-hero {
   margin: 40px auto;
-  height: 20vh;
+  height: 18rem;
   width: auto;
   display: grid;
   place-content: center;

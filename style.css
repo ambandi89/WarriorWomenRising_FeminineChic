@@ -263,7 +263,7 @@ header button a {
   margin: 0 !important;
   padding: 0 !important;
   position: relative;
-  top: -10px;
+  top: -9px;
   left: 0px;
 }
 
@@ -317,6 +317,48 @@ header button a {
 }
 .about-home p {
   color: #f3e3d5;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* HARD RESET subtitle */
+.subtitle-body {
+  display: inline-flex !important;
+  align-items: start !important;
+  justify-content: center;
+  white-space: nowrap;
+  position: static !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* subtitle text */
+.subtitle-body h3 {
+  display: inline-block;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 5vw;
+  margin: auto;
+  padding: 0;
+  position: relative;
+  left: 13px;
+  
+}
+
+/* mic icon – LOCKED to text */
+.subtitle-body img {
+  display: inline-block;
+  height: 2.2rem;
+  width: auto;
+  vertical-align: middle;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: relative;
+  top: -2px;
+  left: 3px;
 }
 .iphone {
   display: flex;
@@ -450,6 +492,8 @@ p {
   transition: 0.5s;
   overflow: hidden;
   backdrop-filter: blur(15px);
+  font-size: clamp(0.8rem, 1rem, 1.2rem);
+  white-space: nowrap;
 }
 
 .btn:hover a {
@@ -1177,6 +1221,10 @@ form input {
     }
     .about-home {
       height: 80vh;
+    }
+    .subtitle-body img {
+    display: inline-block;
+    height: 5.4vh;
     }
     .iphone img {
       height: 45vh;

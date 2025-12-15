@@ -96,7 +96,7 @@ nav {
 
 .home-header {
     position: relative;
-    height: 95vh;
+    height: 55rem;
 }
 #logo {
     width: 80px;
@@ -534,7 +534,7 @@ a:hover::before {
   transition-delay: 0.5s;
 }
 .episodes-home {
-  height: 90vh;
+  height: 50rem;
   width: auto;
   margin-bottom: 50px;
 }
@@ -1168,7 +1168,7 @@ form input {
 }
 @media (min-width: 801px) and (max-width: 1200px) {
     .home-header {
-      height: 110vh;
+      height: 65rem;
     }
     nav {
         display: none;
@@ -1253,7 +1253,7 @@ form input {
       max-width: 900px;
     }
     .episodes-home {
-      height: 100vh;
+      height: 57rem;
     }
     .contact-home {
       height: 65vh;
@@ -1284,7 +1284,7 @@ form input {
 }
 @media (min-width: 1201px) and (max-width: 1600px) {
     .home-header {
-      height: 110vh;
+      height: 67rem;
     }
     nav {
         display: none;
@@ -1368,7 +1368,7 @@ form input {
       max-width: 1200px;
     }
     .episodes-home {
-      height: 100vh;
+      height: 58rem;
     }
     .contact-home {
       height: 65vh;
@@ -1404,7 +1404,7 @@ form input {
 
 @media (min-width: 1601px) and (max-width: 2000px) {
     .home-header {
-      height: 110vh;
+      height: 67rem;
     }
     nav {
         display: none;
@@ -1488,7 +1488,7 @@ form input {
       max-width: 1200px;
     }
     .episodes-home {
-      height: 100vh;
+      height: 59rem;
     }
     .contact-home {
       height: 65vh;

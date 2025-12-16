@@ -78,6 +78,10 @@
         <div class="listen-episodes">
   <div class="result-count" id="resultCount"></div>
 
+     <div class="episode-item" data-title="Episode 1: Women Warriors Rising" data-keywords="women warriors strength resilience community">
+      <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/12MVuigOAdpB9G1zk09IG7?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
   <div class="episode-item" data-title="Episode 3: On Motherhood" data-keywords="leadership authenticity career business motherhood">
     <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/7egIxdpcP3iW7LKPmtCzWp?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
   </div>
@@ -90,9 +94,7 @@
     <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/1pwTG0OkI48aJsCsbJUNIx?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
   </div>
 
-    <div class="episode-item" data-title="Episode 1: Women Warriors Rising" data-keywords="women warriors strength resilience community">
-      <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/12MVuigOAdpB9G1zk09IG7?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    </div>
+ 
 
 
   <div class="no-results hidden" id="noResults">
@@ -105,17 +107,20 @@
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"><g fill="#254441"><path d="M0 0v99.7C62 69 122.4 48.7 205 66c83.8 17.6 160.5 20.4 240-12 54-22 110-26 173-10a392.2 392.2 0 0 0 222-5c55-17 110.3-36.9 160-27.2V0H0Z" opacity=".5"></path><path d="M0 0v74.7C62 44 122.4 28.7 205 46c83.8 17.6 160.5 25.4 240-7 54-22 110-21 173-5 76.5 19.4 146.5 23.3 222 0 55-17 110.3-31.9 160-22.2V0H0Z"></path></g></svg>
       </div>
 
-    <!-- https://www.youtube.com/watch?v=a8Om25FbaJA -->
-         <section class="subscribe-home">
-            <h3>Subscribe for E-mail Updates</h3>
-            <form name="submit-to-google-sheet">
-                <input type="email" name="Email" placeholder="Your Email" required>
-                <button type="submit"><img src="img/mail-44042_1280.png" width="30px" alt=""></button>
-            </form>
-            <span id="msg"></span>
-
-
-        </section>
+     <section class="subscribe-home">
+        <h3>Subscribe for E-mail Updates</h3>
+        <form name="submit-to-google-sheet">
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <button type="submit">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z'/%3E%3C/svg%3E" 
+                     width="30" 
+                     alt="Subscribe" 
+                     class="mail-icon">
+                <span class="spinner"></span>
+            </button>
+        </form>
+        <span id="msg"></span>
+    </section>
 
 
  
@@ -166,25 +171,7 @@
     <script src="search.js"></script>
     <script src="main.js"></script>
 
-     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwREF0zU18e6YBww8min9TXvQ1232UXAUifU1udEza6OXzIAu8X0F-5tU1x8QqFszZudQ/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Thank you for subscribing!"
-                setTimeout(function(){
-                    msg.innerHTML = " "
-                },5000)
-                form.reset()
-            })
-
-            .catch(error => console.error('Error!', error.message))
-        })
-    </script>
+    <script src="subscribe.js"></script>
   
 </body>
 </html>

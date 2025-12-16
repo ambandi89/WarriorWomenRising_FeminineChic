@@ -128,16 +128,20 @@
       </div>
 
 
-        <section class="subscribe-home">
-            <h3>Subscribe for E-mail Updates</h3>
-            <form name="submit-to-google-sheet">
-                <input type="email" name="Email" placeholder="Your Email" required>
-                <button type="submit"><img src="img/mail-44042_1280.png" width="30px" alt=""></button>
-            </form>
-            <span id="msg"></span>
-
-
-        </section>
+    <section class="subscribe-home">
+        <h3>Subscribe for E-mail Updates</h3>
+        <form name="submit-to-google-sheet">
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <button type="submit">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z'/%3E%3C/svg%3E" 
+                     width="30" 
+                     alt="Subscribe" 
+                     class="mail-icon">
+                <span class="spinner"></span>
+            </button>
+        </form>
+        <span id="msg"></span>
+    </section>
 
 
 
@@ -183,25 +187,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="main.js"></script>
-     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwREF0zU18e6YBww8min9TXvQ1232UXAUifU1udEza6OXzIAu8X0F-5tU1x8QqFszZudQ/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Thank you for subscribing!"
-                setTimeout(function(){
-                    msg.innerHTML = " "
-                },5000)
-                form.reset()
-            })
-
-            .catch(error => console.error('Error!', error.message))
-        })
-    </script>
+     <script src="subscribe.js"></script>
   
 </body>
 </html>

@@ -549,10 +549,7 @@ a:hover::before {
     padding: 60px;
 }
 .dashed-line {
-  background-image: repeating-linear-gradient(90deg, #254441, #254441 14px, transparent 14px, transparent 18px, #254441 18px, #254441 22px, transparent 22px, transparent 26px);
-  background-position: left bottom;
-  background-repeat: repeat-x;
-  background-size: 100% 20px;
+  border: 1px solid #254441;
 }
 
 .testimonial-section {
@@ -694,7 +691,7 @@ a:hover::before {
 
     }
 
-.subscribe-home {
+/* .subscribe-home {
   height: 40vh;
   width: auto;
   margin-top: 100px;
@@ -713,8 +710,8 @@ form input {
   border: 0;
   outline: none;
   padding: 10px 20px;
-  height: 70px;
-  width: 50vw;
+  height: 4.5rem;
+  width: 32rem;
   font-size: 1rem;
   position: relative;
   z-index: 1;
@@ -724,8 +721,8 @@ form input {
   background-color: #254441;
   border: none;
   outline: none;
-  height: 70px;
-  width: 15vw;
+  height: 4.5rem;
+  width: 8rem;
   max-width: 100%;
   cursor: pointer;
 }
@@ -735,7 +732,122 @@ form input {
 #msg {
   display: flex;
   justify-content: center;
-}
+} */
+
+.subscribe-home {
+            height: 40vh;
+            width: auto;
+            margin-top: 100px;
+        }
+
+        .subscribe-home h3 {
+            font-family: "Cinzel", serif;
+            font-size: 1.75rem;
+            color: #254441;
+            text-align: center;
+        }
+
+        .subscribe-home form {
+            background: white;
+            display: flex;
+            width: fit-content;
+            max-width: 100%;
+            margin: auto;
+            margin-top: 50px;
+            border-radius: 4px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: opacity 0.3s ease;
+        }
+
+        form input {
+            border: 0;
+            outline: none;
+            padding: 10px 20px;
+            height: 4.5rem;
+            width: 32rem;
+            max-width: calc(100vw - 120px);
+            font-size: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .subscribe-home form button {
+            background-color: #254441;
+            border: none;
+            outline: none;
+            height: 4.5rem;
+            width: 8rem;
+            max-width: 100%;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .subscribe-home button:hover:not(:disabled) {
+            background-color: #1a302e;
+        }
+
+        .subscribe-home button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        #msg {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1rem;
+            font-weight: 600;
+            min-height: 24px;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+
+        #msg.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        #msg.success {
+            color: #254441;
+        }
+
+        #msg.error {
+            color: #d32f2f;
+        }
+
+        /* Loading spinner */
+        .spinner {
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top: 3px solid white;
+            width: 24px;
+            height: 24px;
+            animation: spin 0.8s linear infinite;
+            display: none;
+        }
+
+        .spinner.active {
+            display: block;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 600px) {
+            form input {
+                width: 20rem;
+            }
+            
+            .subscribe-home form button {
+                width: 6rem;
+            }
+        }
 
 /* about page */
 
@@ -1584,7 +1696,7 @@ form input {
       max-width: 900px;
     }
     .hosts-home {
-      height: 75rem;
+      height: 65rem;
     }
     .host-images {
       margin-top: 65px;

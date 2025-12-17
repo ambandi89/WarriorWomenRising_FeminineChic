@@ -1370,6 +1370,7 @@ form input {
       display: block;
       order: 1;
       margin: auto;
+      padding: 3rem;
     }
     .title h1 {
       font-size: 4.5rem;
@@ -1511,6 +1512,7 @@ form input {
       display: block;
       order: 1;
       margin: auto;
+      padding: 3rem;
     }
     .title h1 {
       font-size: 4.5rem;
@@ -1654,6 +1656,7 @@ form input {
       display: block;
       order: 1;
       margin: auto;
+      padding: 3rem;
     }
     .title h1 {
       font-size: 4.5rem;

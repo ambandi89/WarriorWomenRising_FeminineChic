@@ -18,7 +18,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function performSearch() {
       const query = searchInput.value.trim().toLowerCase();
-      console.log('Searching for:', query);
+      console.log('=== STARTING SEARCH ===');
+      console.log('Query:', query);
 
       if (!query) {
         showAllEpisodes();
@@ -27,18 +28,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
       let visibleCount = 0;
 
-      episodes.forEach(episode => {
+      episodes.forEach((episode, index) => {
+        console.log(`\n--- Episode ${index + 1} ---`);
+        
         const title = (episode.getAttribute('data-title') || '').toLowerCase();
         const keywords = (episode.getAttribute('data-keywords') || '').toLowerCase();
         const searchContent = title + ' ' + keywords;
+        
+        console.log('Title:', title);
+        console.log('Keywords:', keywords);
+        console.log('Combined search content:', searchContent);
+        console.log('Does it include "' + query + '"?', searchContent.includes(query));
 
         if (searchContent.includes(query)) {
           episode.classList.remove('hidden');
           visibleCount++;
+          console.log('✓ SHOWING this episode');
         } else {
           episode.classList.add('hidden');
+          console.log('✗ HIDING this episode');
         }
       });
+
+      console.log('\n=== SEARCH COMPLETE ===');
+      console.log('Total visible:', visibleCount);
 
       if (visibleCount === 0) {
         noResults.classList.remove('hidden');

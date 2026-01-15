@@ -1015,6 +1015,7 @@ form input {
     transition: 0.5s;
     overflow: hidden;
     backdrop-filter: blur(15px);
+        cursor: pointer;
 }
 
 /* listen page */
@@ -1275,6 +1276,10 @@ form input {
 
 .menu__link:hover {
   opacity: 1;
+}
+.sageberry a {
+  color: inherit;
+  text-decoration: none;
 }
 
 @media (min-width: 600px) and (max-width: 800px) {
